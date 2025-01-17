@@ -16,11 +16,22 @@ document.getElementById('subscription-form').addEventListener('submit', async (e
         });
         
         if (response.ok) {
-            alert('Assinatura criada com sucesso!');
+            alert('Assinatura de teste criada com sucesso!');
+            // Salvar as informações da assinatura
+            const subscriptionData = {
+                name: name,
+                email: email,
+                plan: plan,
+                id: response.id,
+                status: response.status,
+                created: response.created,
+            };
+            console.log('Dados da assinatura:', subscriptionData);
         } else {
-            alert('Erro ao criar assinatura.');
+            alert('Erro ao criar assinatura de teste.');
         }
     } catch (error) {
         console.error('Erro:', error);
     }
 });
+
