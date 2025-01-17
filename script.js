@@ -1,6 +1,6 @@
-window.Stripe = Stripe; // Certifique-se de que a biblioteca do Stripe está carregada antes dessa linha
+window.Stripe = Stripe;
 
-const stripe = Stripe('pk_test_12345678901234567890123456789012345'); // Substitua pela sua chave pública do Stripe
+const stripe = Stripe('pk_test_51Qi88BI5SiUaDMJPMn4w9NaTz5vJTUAzIWLz9UpSGPQk5e4TuaVQJ2Qjo9RJgzYaAMyHo0sW8XmA93Yv3oAmecix00RPWckOb7'); // Substitua pela sua chave pública do Stripe
 
 document.getElementById('subscription-form').addEventListener('submit', async (e) => {
     e.preventDefault();
